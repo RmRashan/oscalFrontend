@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.small-animate{
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* width */
+.leftScroll::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+/* Track */
+.leftScroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(170, 178, 255);
+  border-radius: 10px;
+  background: #01062c;
+}
+
+/* Handle */
+.leftScroll::-webkit-scrollbar-thumb {
+  background: rgb(104, 127, 255);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.leftScroll::-webkit-scrollbar-thumb:hover {
+  background: rgb(94, 118, 255);
+}
+
+.bg-img{
+  background: linear-gradient(45deg,
+                    rgba(236, 242, 255, 0.973),
+                    rgba(102, 178, 253, 0.815)), url('../public/loginbg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
